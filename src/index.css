@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-marvee-primary: #4F46E5;
+  --color-marvee-secondary: #10B981;
+  --color-marvee-dark: #0F172A;
+}
+
+/* Explicitly define dark variant for class-based dark mode in Tailwind 4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 transition-colors duration-300 antialiased;
+  }
+}
+
+.dark {
+  color-scheme: dark;
+}

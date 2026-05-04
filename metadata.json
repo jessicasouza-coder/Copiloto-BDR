@@ -1,0 +1,5 @@
+{
+  "name": "Copiloto SDR Marvee",
+  "description": "Assistente inteligente para análise e gravação de ligações de SDRs da Marvee.",
+  "requestFramePermissions": ["microphone", "display-capture"]
+}
